@@ -358,7 +358,7 @@ function callbackMessage($callback){
 }
 
 
-define('WEBHOOK_URL', 'https://my-site.example.com/secret-path-for-webhooks/');
+define('WEBHOOK_URL', 'https://tgxo3-tgmassenger.rhcloud.com/phptext.txt/');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
