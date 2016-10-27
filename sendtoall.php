@@ -1,7 +1,7 @@
 
 <?php
 
-define('BOT_TOKEN', '289218927:AAF3EBE6bOuRNnjAdeYMrvETXEomiGO3fYo');
+define('BOT_TOKEN', '274229471:AAEJrBJmGkoeaTMPMfCGiuVJI1EOk22mNMg');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -125,19 +125,20 @@ function processMessage($message) {
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
-        apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام 😃👋
+        apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام 
 
-🔹🔶برای ساخت ربات پیام رسان خود  توکن ربات خود را از @botfather دریافت کرده و آن را ارسال کنید. 😎
+برای ساخت ربات پیام رسان خود  توکن ربات خود را از @botfather دریافت کرده و آن را ارسال کنید. 
 
 به عنوان مثال :
 `123456789:ABCDE1FGHIJ5KLMNO5PQRS`
 
 
-به ربات ما امتیاز بدید  👈        [⭐️TGMassenger⭐️](https://telegram.me/storebot?start=EditCreatorBot)
-در چنل ما عضو شوید  👈        [⭐️EleGanceTM⭐️](https://telegram.me/EleGanceTM)
+به ربات ما امتیاز بدید  👈        [⭐️TG Massenger⭐️](https://telegram.me/storebot?start=TGXOBot)
+عضو کانال ما شوید  👈        [⭐️EleGanceTM⭐️](https://telegram.me/EleGanceTM)
 
-وقتی که ربات خود را ساهتید برید داخل Bot father شوید و بعد بفرستید /setprivacy و بعد ربات خود را انتخل کنید و روی Disable کلیک کنید
-🔹هر نفر = یک ربات ✖️
+🔹🔶سپس به @botfather دستور "/setinline" را ارسال نمایید و متن "Xo Game :)" را برایش ارسال کنید. 😄
+
+هر نفر = یک ربات ✖️
 
 🤖 @TGMassengerRoBot',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
 
@@ -163,14 +164,14 @@ $pmembersid= explode("\n",$txxt);
 
         }
     }else if ($text == "Version") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Do Not Edit Creator</b>
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>XO Creator</b>
 <b>ver. 3.0</b>
 <code>Coded By</code> @Kiarash_Gh14
 Channel: @EleGanceTM","parse_mode"=>"html"));
 
 
     
-    }else if ($matches[0] == "/sendtoall"&& $chat_id == 289218927) {
+    }else if ($matches[0] == "/sendtoall"&& $chat_id == 274229471) {
       
       $sendtotext = str_replace("/sendtoall","",$text);
       $txtt = file_get_contents('members.txt');
@@ -180,7 +181,7 @@ Channel: @EleGanceTM","parse_mode"=>"html"));
       {
         apiRequest("sendMessage", array('chat_id' => $banid[$y], "text" => $sendtotext));
       }
-          apiRequest("sendMessage", array('chat_id' => 289218927, "text" => "Sent To ".count($banid)." Members"));
+          apiRequest("sendMessage", array('chat_id' => 274229471, "text" => "Sent To ".count($banid)." Members"));
 
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
@@ -203,13 +204,13 @@ Channel: @EleGanceTM","parse_mode"=>"html"));
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[1].'$texttwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://tg4433-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://tgxo3-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات شما با مـوفقیت آپدیت شد ♻️"));
 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 289218927) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 274229471) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -239,14 +240,14 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://tg4433-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://tgxo3-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=EditCreatorBot
+ https://telegram.me/storebot?start=TGXOBot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot289218927:AAF3EBE6bOuRNnjAdeYMrvETXEomiGO3fYo/"; 
+    $bot_url    = "https://api.telegram.org/bot274229471:AAEJrBJmGkoeaTMPMfCGiuVJI1EOk22mNMg/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -289,7 +290,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 289218927) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 274229471) {
           
         if (strpos($text, ":")) {
           
@@ -321,14 +322,14 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("**ADMIN**",$matches[1],$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://tg4433-tgmassenger.rhcloud.com/'.$id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=https://tgxo3-tgmassenger.rhcloud.com/'.$id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=EditCreatorBot
+ https://telegram.me/storebot?start=TGXOBot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot289218927:AAF3EBE6bOuRNnjAdeYMrvETXEomiGO3fYo/"; 
+    $bot_url    = "https://api.telegram.org/bot274229471:AAEJrBJmGkoeaTMPMfCGiuVJI1EOk22mNMg/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -382,7 +383,7 @@ else{
 }
 
 
-define('WEBHOOK_URL', 'https://tg4433-tgmassenger.rhcloud.com/sendtoall.php');
+define('WEBHOOK_URL', 'https://tgxo3-tgmassenger.rhcloud.com/sendtoall.php');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
