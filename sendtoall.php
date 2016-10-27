@@ -1,7 +1,7 @@
 
 <?php
 
-define('BOT_TOKEN', '274229471:AAEJrBJmGkoeaTMPMfCGiuVJI1EOk22mNMg');
+define('BOT_TOKEN', '..');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -204,7 +204,7 @@ Channel: @EleGanceTM","parse_mode"=>"html"));
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[1].'$texttwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://tgxo3-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url=https://;-;.rhcloud.com/'.$chat_id.'/pvresan.php');
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات شما با مـوفقیت آپدیت شد ♻️"));
 
 
@@ -240,14 +240,14 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://tgxo3-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://;-;.rhcloud.com/'.$chat_id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
  https://telegram.me/storebot?start=TGXOBot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot274229471:AAEJrBJmGkoeaTMPMfCGiuVJI1EOk22mNMg/"; 
+    $bot_url    = "https://api.telegram.org/bot../"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -329,7 +329,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
  https://telegram.me/storebot?start=TGXOBot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot274229471:AAEJrBJmGkoeaTMPMfCGiuVJI1EOk22mNMg/"; 
+    $bot_url    = "https://api.telegram.org/bot../"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -383,7 +383,7 @@ else{
 }
 
 
-define('WEBHOOK_URL', 'https://tgxo3-tgmassenger.rhcloud.com/sendtoall.php');
+define('WEBHOOK_URL', 'https://;-;.rhcloud.com/sendtoall.php');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
