@@ -53,13 +53,16 @@ if (isset($update->edited_message)){
     'reply_markup'=>json_encode([
       'inline_keyboard'=>[
         [
-          ['text'=>'ربات ادیت نکن خود را بسازید','url'=>'https://telegram.me/EditCreatorBot']
+          ['text'=>'💠ربات ادیت نکن خود را بسازید💠','url'=>'https://telegram.me/EditCreatorBot']
         ],
         [
-          ['text'=>'ربات پیام رسان خود را بسازید','url'=>'https://telegram.me/TGMassengerRoBot']
+          ['text'=>'🚀ربات پیام رسان خود را بسازید🚀','url'=>'https://telegram.me/TGMassengerRoBot']
         ],
         [
-          ['text'=>'کانال تیم','url'=>'https://telegram.me/EleGanceTM']
+          ['text'=>'⭕️ربات XO خود را بسازید❌','url'=>'https://telegram.me/TGXOBot']
+        ],
+        [
+          ['text'=>'📡کانال تیم📡','url'=>'https://telegram.me/EleGanceTM']
         ]
       ]
     ])
