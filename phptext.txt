@@ -45,7 +45,7 @@ if (isset($update->edited_message)){
   //$up = file_get_contents(__DIR__.'/users/'.$eid.'.json');
   //str_replace("edited_message","message",$up);
 }elseif(preg_match('/^\/([Ss]tart)/',$text1)){
-  $text = "به ربات ادیت نکن\nخوش آمدید\nمنو توگروهاتون بیارید تا بگم کی متنشو ادیت کرده";
+  $text = "به ربات ادیت نکن\nخوش آمدید\nمنو توگروهاتون بیارید تا بگم کی متنشو ادیت کرده\n\n میتوانید با دکمه های شیشه ای زیر یه رباتی که میخواید رو بسازید ✌";
   bot('sendmessage',[
     'chat_id'=>$chat_id,
     'text'=>$text,
